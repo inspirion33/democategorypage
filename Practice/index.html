@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="header" id="myHeader">
+        <a href="#" class="nav-brand">AUTOSTORE</a>
+        <div class="header-right">
+            <ul>
+                <li><a href="#" class="nav-item">Home</a></li>
+                <li><a href="#product" class="nav-item">Products</a></li>
+                <li><a href="#about" class="nav-item">About</a></li>
+                <li><a href="#contact" class="nav-item">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="background">
+        <!-- <div class="col1">
+            
+        </div> -->
+        <div class="col2"><h1>Welcome To The World Of Green</h1></div>
+        
+    </div>
+    <div class="banner">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, laborum.</p>
+    </div>
+
+    <section id="product">
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+    </section>
+
+    <div class="green">
+        <section id="about">
+            <div class="about-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis dignissimos nihil, fugit dolores recusandae incidunt expedita dolore non error magnam corporis iusto, ullam harum reiciendis aliquam! Harum distinctio fuga dolores qui adipisci, molestiae sit porro necessitatibus, voluptatem a quas unde numquam omnis! Recusandae dolorem veniam ex nesciunt iste numquam architecto obcaecati. Laudantium, voluptatem eos! Distinctio dolorum cum perferendis a esse quo sed quibusdam doloribus deserunt totam autem quos fugit nostrum qui amet non id exercitationem, nobis itaque doloremque laudantium! Aut pariatur recusandae voluptatem cumque voluptate at nostrum nulla. Culpa est consequatur dolorum ipsam vitae distinctio unde impedit labore doloribus eveniet?</p>
+            </div>
+            <div class="about-img">
+                <img src="" alt="">
+            </div>
+        </section>
+    </div>
+
+    <section id="contact">
+        <div>
+            <h3></h3>
+            <form>
+                <input type="text" name="name" id="fname">
+                <input type="email" name="email" id="email">
+                <input type="text" name="message" id="message">
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {myFunction()};
+
+        // Get the header
+        var header = document.getElementById("myHeader");
+            
+        // Get the offset position of the navbar
+        var sticky = header.offsetTop;
+            
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+    </script>
+</body>
+</html>
