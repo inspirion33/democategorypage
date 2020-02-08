@@ -59,6 +59,23 @@ a.active{
     background-color: grey;
 }
 
+.icon{
+    height: 30;
+    width: 30px;
+    background-color: red;
+    position: relative;
+    float: right;
+    margin-right: 10px;
+    padding: 3px 1px;
+    bottom: 150;
+    z-index: 100;
+}
+
+.icon span a{
+    text-decoration: none;
+    color: #fff;
+}
+
 footer{
     text-align: center;
     height: 10vh;
