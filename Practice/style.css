@@ -4,13 +4,29 @@
 }
 
 body{
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
+}
+
+
+.text-center{
+    text-align: center;
+}
+
+.sct-heading{
+    font-size: 3em;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+    padding: 40px 0px;
+}
+
+.img-fluid{
+    width: 100%;
 }
 
 
 .header{
-    background-color:#3B5998;
+    background-color:#eee;
     padding: 20px 100px;
     z-index: 100;
 }
@@ -35,7 +51,17 @@ body{
 }
 
 .header .header-right a{
-    color: white !important;
+    color: tomato !important;
+    font-weight: 500;
+    transition: transform .2s;
+}
+
+a.nav-item{
+    transition: transform .2s;
+}
+
+a.nav-item:hover {
+    transform: scale(1.5) !important;
 }
 
 .header .header-right .nav-item{
@@ -46,21 +72,55 @@ body{
 .header .nav-brand{
     text-decoration: none;
     padding: 0px 5px;
-    font-weight: 900;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.1em;
-    color: #fff;
+    color: tomato;
 }
 
 #background{
-    background-image: url('https://cdn.pixabay.com/photo/2020/02/04/16/14/leaves-4818626_1280.jpg');
-    height: 60vh;
-    padding: 40px;
+    background-image: url('/images/slider-slide-1-1920x1080.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 80vh; */
+    padding: 120px 0px;
 }
 
-#background h1{
-    font-size: 3.2em;
-    font-weight: bolder;
-    text-transform: uppercase;
+.section-cover{
+    width: 80%;
+    margin: auto;
+}
+
+#background .section-cover{
+    text-align: center;
+    top: 35%;
+    position: relative;
+}
+
+#background .section-cover h1{
+    font-size: 2.8em !important;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+
+#background .section-cover .bg-text{
+    font-size: 1.4em;
+    color: white;
+    padding: 10px 0px;
+}
+
+.btn-action{
+    padding: 10px 20px;
+    border-radius: 90px;
+    font-size: 1em;
+    font-weight: 500;
+    margin: 10px 10px;
+    font-family: 'Poppins', sans-serif;
+    border: 3px outset tomato;
+    background-color: transparent;
+    color: white;
 }
 
 .banner{
@@ -74,14 +134,32 @@ body{
 /* .col1{
     width: 50vw;
 } */
-
-
-.col2{
-    text-align: center;
-    top: 45%;
-    bottom: 50%;
-    position: relative;
+.items .single-item .item-desc{
+    padding: 10px 10px 20px 10px;
 }
+
+.items .single-item .item-desc .items-text{
+    padding: 0px 0px 10px 0px;
+}
+
+a.items-readmore{
+    text-decoration: none;
+    color: tomato;
+    font-size: 1em;
+    font-weight: lighter;
+    transition: ease-in 0.3s;
+}
+
+a.items-readmore:hover{
+    color: teal;
+    text-decoration: underline;
+}
+
+.items .single-item .items-head{
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+}
+
 .green{
     background-color: teal;
 }
@@ -91,12 +169,27 @@ body{
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
     margin: auto;
-    width: 80vw;
-    padding: 40px 0 40px 0;
+    /* width: 80vw;
+    padding: 40px 0 40px 0; */
+}
+
+.abt-heading{
+    font-size: 3em;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px 0px;
+    color: #111;
 }
 
 .about-text{
-    width: 90%;
+    padding: 100px;
+    text-align: justify;
+    color: #111;
+}
+
+.about-img{
+    background-image: url('/images/slider-slide-1-1920x1080.jpg');
+    background-size: cover;
 }
 
 
@@ -105,15 +198,65 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: auto;
-    height: 90vh;
     width: 80vw;
     column-gap: 30px;
     row-gap: 30px;
-    padding: 10px 0 50px 0px;
+    padding: 50px 0 50px 0px;
 }
 
 #product .items{
-    background-color: grey;
+    background-color: #eee;
+}
+
+#section-portfolio{
+    padding-top: 20px;
+}
+.portfolio{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: auto;
+}
+
+.portfolio img{
+    width: 100%;
+}
+
+.more-project{
+    font-size: 1.2em;
+    font-family: 'Poppins', sans-serif;
+}
+
+a.more-project{
+    color: white !important;
+    text-decoration: none;
+}
+
+#section-portfolio .banner{
+    margin-bottom: 0px;
+}
+
+#yChoseus{
+    background-image: url('/images/chose_banner.png');
+    background-position: top center;
+    height: 90vh;
+}
+
+#yChoseus .ycu-desc{
+    width: 40%;
+    float: right;
+    padding: 50px;
+}
+
+#yChoseus .ycu-heading{
+    font-size: 3em;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    padding: 40px 0px 20px 0px;
+}
+
+#yChoseus p.ycu-text{
+    font-size: 1.1em;
+    text-align: justify;
 }
 
 #contact{
@@ -122,4 +265,37 @@ body{
 form input{
     display: block;
     text-align: center;
+}
+
+.thumb img{
+    vertical-align: middle;
+    width: 100%;
+}
+
+img.img-style{
+    filter: grayscale(50%);
+    -webkit-filter: grayscale(50%);
+    -webkit-transition: all 1s ease;
+}
+
+img.img-style:hover{
+    filter: grayscale(0%);
+    filter: gray;
+    -webkit-filter: grayscale(0%);
+    filter: none;
+    transition: 1s ease;
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+
+footer{
+    padding: 25px 0px;
+    background-color: #000000;
+    color: white;
+}
+
+footer a{
+    text-decoration: none;
+    color: tomato;
 }
